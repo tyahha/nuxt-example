@@ -1,12 +1,17 @@
 <template>
   <div class="container">
-    <h1>Welcome!</h1>
+    <h1>Hello, {{ name }}!</h1>
     <nuxt-link to="/about">About page</nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
+  asyncData() {
+    return new Promise(resolve => {
+      setTimeout(() => resolve({ name: 'Vue World'}), 1000)
+    })
+  },
   head: {
     title: 'Home page',
     meta: [

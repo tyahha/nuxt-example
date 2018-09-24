@@ -12,9 +12,11 @@ import TwitterHeadCard from '~/components/twitter-head-card.vue'
 
 export default {
   asyncData() {
-    return {
-      name: process.static ? 'static' : (process.server ? 'server' : 'client')
-    }
+    return new Promise(resolve => {
+      setTimeout(() => resolve({
+        name: process.static ? 'static' : (process.server ? 'server' : 'client')
+      }), 1000)
+    })
   },
   head: {
     title: 'About page',
