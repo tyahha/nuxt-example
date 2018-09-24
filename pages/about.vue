@@ -15,6 +15,7 @@
 import TwitterHeadCard from '~/components/twitter-head-card.vue'
 
 export default {
+  layout: 'dark',
   loading: false,
   asyncData() {
     return new Promise(resolve => {
