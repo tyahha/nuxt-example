@@ -2,6 +2,7 @@
   <div class="container">
     <h1>Hello, {{ name }}!</h1>
     <nuxt-link to="/about">About page</nuxt-link>
+    <nuxt-link to="/users">User List</nuxt-link>
   </div>
 </template>
 

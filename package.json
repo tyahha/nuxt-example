@@ -1,6 +1,7 @@
 {
   "name": "example-hello-world",
   "dependencies": {
+    "axios": "latest",
     "nuxt-edge": "latest"
   },
   "scripts": {
