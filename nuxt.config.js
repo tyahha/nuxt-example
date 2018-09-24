@@ -7,5 +7,5 @@ export default {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ]
   },
-  loading: '~/components/loading.vue,'
+  loading: '~/components/loading.vue',
 }
