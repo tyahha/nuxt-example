@@ -1,6 +1,7 @@
 {
   "name": "example-hello-world",
   "dependencies": {
+    "bulma": "^0.5.1",
     "axios": "latest",
     "nuxt-edge": "latest"
   },

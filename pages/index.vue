@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <h1>Hello, {{ name }}!</h1>
-    <nuxt-link to="/about">About page</nuxt-link>
-    <nuxt-link to="/users">User List</nuxt-link>
+    <p><nuxt-link to="/about" class="button is-medium is-primary hvr-float-shadow">I am a button</nuxt-link></p>
+    <p><nuxt-link to="/about">About page</nuxt-link></p>
+    <p><nuxt-link to="/users">User List</nuxt-link></p>
   </div>
 </template>
 

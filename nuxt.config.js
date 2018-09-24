@@ -7,5 +7,16 @@ export default {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ]
   },
+  css: [
+    'bulma/css/bulma.css',
+    '~/css/main.css'
+  ],
+  render: {
+    bundleRender: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   loading: '~/components/loading.vue',
 }
